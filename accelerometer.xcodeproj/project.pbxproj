@@ -18,6 +18,9 @@
 		46C1657F1D219DE800BE9F39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C1657E1D219DE800BE9F39 /* CoreGraphics.framework */; };
 		46C165811D219E0E00BE9F39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C165801D219E0E00BE9F39 /* UIKit.framework */; };
 		46C165831D219E1800BE9F39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C165821D219E1800BE9F39 /* Foundation.framework */; };
+		46C165881D241FE800BE9F39 /* myFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46C165871D241FE800BE9F39 /* myFile.txt */; };
+		46C1658B1D24294500BE9F39 /* myData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46C165891D24294500BE9F39 /* myData.xcdatamodeld */; };
+		46C1658D1D24298B00BE9F39 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C1658C1D24298B00BE9F39 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		46C1657E1D219DE800BE9F39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		46C165801D219E0E00BE9F39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		46C165821D219E1800BE9F39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46C165871D241FE800BE9F39 /* myFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myFile.txt; sourceTree = "<group>"; };
+		46C1658A1D24294500BE9F39 /* myData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myData.xcdatamodel; sourceTree = "<group>"; };
+		46C1658C1D24298B00BE9F39 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		46C1658E1D242C8600BE9F39 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C1658D1D24298B00BE9F39 /* CoreData.framework in Frameworks */,
 				46C165831D219E1800BE9F39 /* Foundation.framework in Frameworks */,
 				46C165811D219E0E00BE9F39 /* UIKit.framework in Frameworks */,
 				46C1657F1D219DE800BE9F39 /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +99,7 @@
 		46C165341D1C5ED600BE9F39 = {
 			isa = PBXGroup;
 			children = (
+				46C1658C1D24298B00BE9F39 /* CoreData.framework */,
 				46C165821D219E1800BE9F39 /* Foundation.framework */,
 				46C165801D219E0E00BE9F39 /* UIKit.framework */,
 				46C1657E1D219DE800BE9F39 /* CoreGraphics.framework */,
@@ -114,8 +123,10 @@
 		46C1653F1D1C5ED600BE9F39 /* accelerometer */ = {
 			isa = PBXGroup;
 			children = (
+				46C165871D241FE800BE9F39 /* myFile.txt */,
 				46C1657B1D219D1100BE9F39 /* CMAccelerometer.h */,
 				46C1657C1D219D1100BE9F39 /* CMAccelerometer.m */,
+				46C165891D24294500BE9F39 /* myData.xcdatamodeld */,
 				46C165431D1C5ED600BE9F39 /* AppDelegate.h */,
 				46C165441D1C5ED600BE9F39 /* AppDelegate.m */,
 				46C165461D1C5ED600BE9F39 /* ViewController.h */,
@@ -132,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				46C165411D1C5ED600BE9F39 /* main.m */,
+				46C1658E1D242C8600BE9F39 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -260,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C165881D241FE800BE9F39 /* myFile.txt in Resources */,
 				46C1654D1D1C5ED600BE9F39 /* Assets.xcassets in Resources */,
 				46C1654B1D1C5ED600BE9F39 /* Main.storyboard in Resources */,
 			);
@@ -290,6 +303,7 @@
 				46C165451D1C5ED600BE9F39 /* AppDelegate.m in Sources */,
 				46C165421D1C5ED600BE9F39 /* main.m in Sources */,
 				46C1657D1D219D1100BE9F39 /* CMAccelerometer.m in Sources */,
+				46C1658B1D24294500BE9F39 /* myData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +440,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = accelerometer/PrefixHeader.pch;
 				INFOPLIST_FILE = accelerometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kat.accelerometer;
@@ -440,6 +456,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = accelerometer/PrefixHeader.pch;
 				INFOPLIST_FILE = accelerometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kat.accelerometer;
@@ -534,6 +552,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46C165891D24294500BE9F39 /* myData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46C1658A1D24294500BE9F39 /* myData.xcdatamodel */,
+			);
+			currentVersion = 46C1658A1D24294500BE9F39 /* myData.xcdatamodel */;
+			path = myData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 46C165351D1C5ED600BE9F39 /* Project object */;
 }

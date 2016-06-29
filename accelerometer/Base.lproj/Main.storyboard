@@ -31,7 +31,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="DBN-5f-4gD" kind="push" id="hPw-1F-iqc"/>
+                                    <segue destination="kPs-UX-J78" kind="push" id="KGi-AK-6ST"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,39 +51,56 @@
             <point key="canvasLocation" x="334" y="379"/>
         </scene>
         <!--Accelerometer-->
-        <scene sceneID="X7A-vj-Z9e">
+        <scene sceneID="JSH-pE-2If">
             <objects>
-                <viewController id="DBN-5f-4gD" customClass="CMAccelerometer" sceneMemberID="viewController">
+                <viewController id="kPs-UX-J78" customClass="CMAccelerometer" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FH8-Kt-7aE"/>
-                        <viewControllerLayoutGuide type="bottom" id="C9n-j2-pvi"/>
+                        <viewControllerLayoutGuide type="top" id="QVT-z0-KAz"/>
+                        <viewControllerLayoutGuide type="bottom" id="K7O-kt-6J2"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="a3F-b3-jju">
+                    <view key="view" contentMode="scaleToFill" id="Btp-gl-xl4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9v-0x-UmM">
-                                <rect key="frame" x="171" y="307" width="259" height="143"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="40"/>
-                                <state key="normal" title="Start"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucR-uT-D3X">
+                                <rect key="frame" x="192" y="500" width="216" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="0.4584343327" blue="0.45037198350000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="toggleButton:" destination="DBN-5f-4gD" eventType="touchUpInside" id="eKx-VC-y3g"/>
+                                    <action selector="toggleButton:" destination="kPs-UX-J78" eventType="touchUpInside" id="40n-fz-nm7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJB-R4-ScU">
+                                <rect key="frame" x="183" y="162" width="234" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quV-KF-Xxr">
+                                <rect key="frame" x="276" y="218" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submit:" destination="kPs-UX-J78" eventType="touchUpInside" id="Chs-Io-DqV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80826675891876221" green="0.92552393674850464" blue="0.95104914903640747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="b9v-0x-UmM" firstAttribute="centerX" secondItem="a3F-b3-jju" secondAttribute="centerX" id="7va-Mg-x2m"/>
-                            <constraint firstItem="b9v-0x-UmM" firstAttribute="centerY" secondItem="a3F-b3-jju" secondAttribute="centerY" id="tuS-s4-jMm"/>
+                            <constraint firstItem="quV-KF-Xxr" firstAttribute="centerX" secondItem="Btp-gl-xl4" secondAttribute="centerX" id="1Bp-lE-WkX"/>
+                            <constraint firstItem="RJB-R4-ScU" firstAttribute="centerX" secondItem="Btp-gl-xl4" secondAttribute="centerX" id="kQ9-ro-hT9"/>
+                            <constraint firstItem="ucR-uT-D3X" firstAttribute="centerX" secondItem="Btp-gl-xl4" secondAttribute="centerX" id="sEH-4K-RTc"/>
+                            <constraint firstItem="ucR-uT-D3X" firstAttribute="centerY" secondItem="Btp-gl-xl4" secondAttribute="centerY" id="sj9-DQ-y5a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Accelerometer" id="ciS-v2-if1">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="Zw2-zK-xNA"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="reQ-IC-dlo"/>
+                    <connections>
+                        <outlet property="textf" destination="RJB-R4-ScU" id="2fi-La-zso"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="smu-V1-p1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laA-nH-zqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077" y="379"/>
+            <point key="canvasLocation" x="1106" y="380"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kRw-ea-4Fg">
