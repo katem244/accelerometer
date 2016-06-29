@@ -77,17 +77,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quV-KF-Xxr">
-                                <rect key="frame" x="276" y="218" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="submit:" destination="kPs-UX-J78" eventType="touchUpInside" id="Chs-Io-DqV"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80826675891876221" green="0.92552393674850464" blue="0.95104914903640747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="quV-KF-Xxr" firstAttribute="centerX" secondItem="Btp-gl-xl4" secondAttribute="centerX" id="1Bp-lE-WkX"/>
                             <constraint firstItem="RJB-R4-ScU" firstAttribute="centerX" secondItem="Btp-gl-xl4" secondAttribute="centerX" id="kQ9-ro-hT9"/>
                             <constraint firstItem="ucR-uT-D3X" firstAttribute="centerX" secondItem="Btp-gl-xl4" secondAttribute="centerX" id="sEH-4K-RTc"/>
                             <constraint firstItem="ucR-uT-D3X" firstAttribute="centerY" secondItem="Btp-gl-xl4" secondAttribute="centerY" id="sj9-DQ-y5a"/>
