@@ -31,7 +31,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="kPs-UX-J78" kind="push" id="KGi-AK-6ST"/>
+                                    <segue destination="kPs-UX-J78" kind="push" id="oLl-c0-zDK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="laA-nH-zqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="380"/>
+            <point key="canvasLocation" x="1156" y="379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kRw-ea-4Fg">
