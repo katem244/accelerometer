@@ -19,7 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="or5-uo-F5t">
                                 <rect key="frame" x="119" y="238" width="316" height="139"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Press Me!">
@@ -72,23 +72,14 @@
                                     <action selector="toggleButton:" destination="kPs-UX-J78" eventType="touchUpInside" id="40n-fz-nm7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJB-R4-ScU">
-                                <rect key="frame" x="183" y="162" width="234" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.80826675891876221" green="0.92552393674850464" blue="0.95104914903640747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RJB-R4-ScU" firstAttribute="centerX" secondItem="Btp-gl-xl4" secondAttribute="centerX" id="kQ9-ro-hT9"/>
                             <constraint firstItem="ucR-uT-D3X" firstAttribute="centerX" secondItem="Btp-gl-xl4" secondAttribute="centerX" id="sEH-4K-RTc"/>
                             <constraint firstItem="ucR-uT-D3X" firstAttribute="centerY" secondItem="Btp-gl-xl4" secondAttribute="centerY" id="sj9-DQ-y5a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="reQ-IC-dlo"/>
-                    <connections>
-                        <outlet property="textf" destination="RJB-R4-ScU" id="2fi-La-zso"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="laA-nH-zqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
