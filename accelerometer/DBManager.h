@@ -16,5 +16,6 @@
 -(NSArray *)loadDataFromDB:(NSString *)query;
 -(void)executeQuery:(NSString *)query;
 -(instancetype)initWithDatabaseFilename:(NSString *)dbFilename;
+-(void)copyDatabaseIntoDocumentsDirectory;
 
 @end
