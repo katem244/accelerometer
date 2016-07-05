@@ -19,7 +19,6 @@
 		46C1657F1D219DE800BE9F39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C1657E1D219DE800BE9F39 /* CoreGraphics.framework */; };
 		46C165811D219E0E00BE9F39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C165801D219E0E00BE9F39 /* UIKit.framework */; };
 		46C165831D219E1800BE9F39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C165821D219E1800BE9F39 /* Foundation.framework */; };
-		46C165881D241FE800BE9F39 /* myFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46C165871D241FE800BE9F39 /* myFile.txt */; };
 		46C1658D1D24298B00BE9F39 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C1658C1D24298B00BE9F39 /* CoreData.framework */; };
 		46C165901D257FAD00BE9F39 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C1658F1D257FAC00BE9F39 /* libsqlite3.tbd */; };
 		46C165931D2581A900BE9F39 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C165921D2581A900BE9F39 /* DBManager.m */; };
@@ -65,7 +64,6 @@
 		46C1657E1D219DE800BE9F39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		46C165801D219E0E00BE9F39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		46C165821D219E1800BE9F39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		46C165871D241FE800BE9F39 /* myFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myFile.txt; sourceTree = "<group>"; };
 		46C1658C1D24298B00BE9F39 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		46C1658E1D242C8600BE9F39 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		46C1658F1D257FAC00BE9F39 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -134,7 +132,6 @@
 			children = (
 				4634D6AF1D26EE38001FA1FF /* myFile.csv */,
 				46C165941D259BB100BE9F39 /* myDB.sql */,
-				46C165871D241FE800BE9F39 /* myFile.txt */,
 				46C1657B1D219D1100BE9F39 /* CMAccelerometer.h */,
 				46C1657C1D219D1100BE9F39 /* CMAccelerometer.m */,
 				46C165431D1C5ED600BE9F39 /* AppDelegate.h */,
@@ -284,7 +281,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C165881D241FE800BE9F39 /* myFile.txt in Resources */,
 				4634D6B01D26EE38001FA1FF /* myFile.csv in Resources */,
 				46C1654D1D1C5ED600BE9F39 /* Assets.xcassets in Resources */,
 				46C165951D259BB100BE9F39 /* myDB.sql in Resources */,
